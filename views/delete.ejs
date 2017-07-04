@@ -3,5 +3,17 @@
         <title>Delete</title>
     </head>
     <body>
+        <form action="/delete" method="post">
+            <!--{%  
+                Owner.find(function (err, owners) {
+                    res.write(owners);
+                });
+            %}-->
+            <label for="delete_id">ID</label>
+            <br>
+            <input type="text" name = "delete_id" id = "delete_id">
+            <br><br>
+            <button>Send</button>
+        </form>
     </body>
 </html>
